@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page-container">
+        <div id="wrapper">
+            <header>
+                <a href="https://www.github.com/percyekanem/house-price-prediction" target="_blank" class="urls" id="url-txt">
+                    <h1>House Price Prediction Demo</h1>
+                </a>
+            </header>
+            <main>
+                <section class="input-section">
+                    <h2>Enter Your Details</h2>
+                    <form id="prediction-form">
+                        <label for="region">Region</label>
+                        <select name="region" id="region">
+                            <option value="" disabled selected>select an option</option>
+                            <option value="bolton">Bolton</option>
+                        </select>
+        
+                        <label for="county">County</label>
+                        <select name="county" id="county">
+                            <option value="" disabled selected>select an option</option>
+                            <option value="greatermanchester">Greater Manchester</option>
+                        </select>
+        
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="" disabled selected>select an option</option>
+                            <option value="england">England</option>
+                        </select>
+
+                        <label for="ptype">Property Type</label>
+                        <select name="ptype" id="ptype">
+                            <option value="" disabled selected>select an option</option>
+                            <option value="semi">Semi-Detached</option>
+                        </select>
+
+                        <label for="year">Desired Prediction Year</label>
+                        <select name="year" id="year">
+                            <option value="" disabled selected>select an option</option>
+                            <option value="2023">2023</option>
+                        </select>
+        
+                        <button type="submit">Get House Prices!</button>
+                    </form>
+                </section>
+                
+                <section class="graph-section">
+                    <h2>Historical Data and Predictions</h2>
+                    <div id="prediction-graph">
+                        <img src="predictions.png" alt="Predicted house price area chart">
+                    </div>
+                    <div id="historical-graph">
+                        <img src="past-data.png" alt="Historical house price area chart">
+                    </div>
+                </section>
+            </main>    
+        </div>
+        <footer id="footer">
+            <a href="https://www.github.com/percyekanem" target="_blank" class="urls" id="url-txt">
+                <p>Percy Ekanem &copy; 2023</p>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
